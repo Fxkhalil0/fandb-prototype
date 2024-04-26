@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  margin: 0 auto;
+  width: 85%;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+nav > img{
+  width: 60px;
+  height: 60px;
+}
+.table__section{
+  margin-top: 100px;
+}
+.menu__section{
+  display: flex;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+.left__side{
+  width: 70%;
+}
+.cards{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.right__side{
+  width: 30%;
+  padding: 0 40px;
+}
+.total__price{
+  display: flex;
+  justify-content: space-between;
+}
+.left__title > h4:first-of-type,
+.right__title > h4:first-of-type{
+  margin-bottom: 15px;
+}
+.left__title > h2,
+.right__title > h2{
+  margin-top: 50px;
+}
+.promo__code{
+  margin-top: 90px;
+}
+.promo__code > h2{
+  margin-bottom: 40px;
+}
+.promo__code > input{
+  padding: 6px 10px;
+  width: 200px;
+  height: 34px;
+  margin-top: 3px;
+  outline: none;
+  border: 1px solid #F46700;
+}
+.price__card{
+  margin-top: 90px;
+  background-color: #9f9f9f29;
+  padding: 20px;
+  border-radius: 8px;
+}
+@media (max-width: 1400px) {
+  .promo__code button{
+    margin-top: 10px;
+    margin-left: 50%;
+    transform: translateX(-100%);
+  }
+}
+@media (max-width: 1000px) {
+  .left__side{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .right__side{
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 750px) {
+  .cards > div{
+    width: 48%;
+    margin-bottom: 10px;
+  }
+  .right__side{
+    margin-left: 10%;
+    width: 80%;
+    transform: translateX(0%);
+  }
+}
+@media (max-width: 500px) {
+  .cards > div{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .right__side{
+    margin-left: 0%;
+    width: 100%;
+    transform: translateX(0%);
+  }
+  
+}
